@@ -63,4 +63,9 @@ interval.
 - This is public regulator data and is not tenant-scoped (no `company_master_id`).
 - Data is informational, not a system of record; the UI always links back to the
   official source and keeps `raw_json` for audit.
+  
+##PM2 list
+pm2 start /var/www/html/python_RSS_ingest/main.py \
+  --name rss-ingest \
+  --interpreter /var/www/html/python_RSS_ingest/.venv/bin/python  
 ```
